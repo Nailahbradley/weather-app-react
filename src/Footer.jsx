@@ -9,6 +9,7 @@ export default function degrees() {
         <a
           href="https://github.com/Nailahbradley/weather-app-react"
           target="_blank"
+          rel="noreferrer"
         >
           {" "}
           Open-source code{" "}
