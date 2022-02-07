@@ -1,0 +1,37 @@
+#inputCity {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-radius: 28px;
+  padding-right: 125px;
+  line-height: 43px;
+  margin-right: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-left: 10px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 5%);
+}
+.searchButton {
+  padding: 14px 17px;
+  margin-left: 5px;
+  font-size: 15px;
+  background: #2274a5;
+  color: whitesmoke;
+  font-weight: bolder;
+  border-radius: 37px;
+  border: none;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 10%);
+}
+#currentButton {
+  padding: 14px 19px;
+  font-size: 15px;
+  margin-left: 22px;
+  font-weight: bolder;
+  background: #ec6e4b;
+  color: whitesmoke;
+  border-radius: 37px;
+  border: none;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 10%);
+}
+.fas {
+  font-size: 20px;
+}
