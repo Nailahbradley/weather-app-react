@@ -5,7 +5,7 @@ export default function degrees() {
   return (
     <footer>
       {" "}
-      <span class="credit">
+      <span className="credit">
         <a
           href="https://github.com/Nailahbradley/weather-app-react"
           target="_blank"
