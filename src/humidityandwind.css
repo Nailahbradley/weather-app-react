@@ -1,0 +1,12 @@
+ul {
+  padding: 0;
+}
+date,
+li {
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7f7f7f;
+  font-weight: 400;
+  font-size: 16px;
+}
