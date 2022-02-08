@@ -9,7 +9,7 @@ export default function Footer() {
         {" "}
         <span class="credit">
           <a
-            href="https://github.com/Nailahbradley/nailah-weather-shecodes-project"
+            href="https://github.com/Nailahbradley/weather-app-react"
             target="_blank"
             rel="noreferrer"
           >
