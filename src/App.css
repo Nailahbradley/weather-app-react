@@ -1,1 +1,13 @@
-
+.weather-wrapper {
+  max-width: 565px;
+  margin: auto;
+}
+.weather-wrapper {
+  border: 1px solid #dadde1;
+  padding: 27px;
+  padding-bottom: 21px;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  margin-block: 82px;
+  box-shadow: 2px 5px 5px rgb(0 0 0 / 2%);
+}

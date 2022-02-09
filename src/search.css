@@ -1,0 +1,15 @@
+.Weather {
+  text-align: center;
+}
+.icon {
+  font-size: 50px;
+}
+.temperature {
+  font-size: 50px;
+  font-weight: bold;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
