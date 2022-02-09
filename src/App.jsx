@@ -13,6 +13,17 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <footer>
+        This project was coded by Nailah Bradley and is{" "}
+        <a
+          href="https://github.com/Nailahbradley/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          Open-sourced on GitHub{" "}
+        </a>
+      </footer>
     </div>
   );
 }

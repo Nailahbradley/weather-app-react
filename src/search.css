@@ -5,11 +5,22 @@
   font-size: 50px;
 }
 .temperature {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 }
 ul,
 li {
   text-decoration: none;
   list-style: none;
+}
+.city {
+  font-size: 45px;
+  font-weight: 700;
+}
+.fahrenheit {
+  font-size: 25px;
+  color: grey;
+  position: relative;
+  top: -20px;
+  left: -9px;
 }

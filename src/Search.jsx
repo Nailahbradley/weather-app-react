@@ -6,9 +6,12 @@ export default function Search() {
   return (
     <div className="Weather">
       <div class="Search bar">Search bar and button</div>
-      <h1 c>Chicago</h1>
       <br />
-      <div className="temperature">30°F</div>
+      <h1 className="city">Chicago</h1>
+      <br />
+      <div className="temperature">
+        30 <span className="fahrenheit">°F</span>
+      </div>
       <div className="icon">
         {" "}
         <BsClouds />{" "}

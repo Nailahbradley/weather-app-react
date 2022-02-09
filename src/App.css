@@ -11,3 +11,14 @@
   margin-block: 82px;
   box-shadow: 2px 5px 5px rgb(0 0 0 / 2%);
 }
+footer {
+  text-align: center;
+  margin-top: -60px;
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: #5664ff;
+  font-size: small;
+}
