@@ -6,7 +6,8 @@ import { BsSearch } from "react-icons/bs";
 export default function Search() {
   return (
     <div className="Weather">
-      <div class="Search bar">
+      <div className="searchbar"></div>
+      <div className="Search bar">
         {" "}
         <form autoComplete="off">
           <div className="row">

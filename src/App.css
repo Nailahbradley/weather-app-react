@@ -1,9 +1,14 @@
+.container {
+  max-width: 720px;
+  margin-top: -56px;
+}
+
 .weather-wrapper {
   max-width: 565px;
   margin: auto;
 }
 .weather-wrapper {
-  border: 1px solid #dadde1;
+  border: 1px solid #b99be6;
   padding: 27px;
   padding-bottom: 21px;
   border-radius: 4px;
