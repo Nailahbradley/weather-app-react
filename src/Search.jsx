@@ -1,9 +1,19 @@
 import React from "react";
+import axios from "axios";
 import "./search.css";
 import { BsClouds } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 
 export default function Search() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  const apikey = `cdfcb64b7f4fb64ab376e215b5000fa5`;
+  let city = "Chicago";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+  axios.get(apiUrl).then(handleResponse);
+
   return (
     <div className="Weather">
       <div className="searchbar"></div>
