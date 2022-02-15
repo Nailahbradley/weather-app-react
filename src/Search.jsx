@@ -3,6 +3,7 @@ import CurrentDate from "./CurrentDate";
 import axios from "axios";
 import "./search.css";
 import { BsSearch } from "react-icons/bs";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Search(props) {
   const [city, setcity] = useState(props.citydefault);
@@ -16,7 +17,7 @@ export default function Search(props) {
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
   function search() {
@@ -80,7 +81,7 @@ export default function Search(props) {
           </div>
         </div>
         <div className="icon">
-          <img src={weather.icon} alt={weather.description}></img>
+          <WeatherIcon code={weather.icon} />
         </div>
 
         <h2 className="text-capitalize"> {weather.description} </h2>
