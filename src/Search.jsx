@@ -6,6 +6,7 @@ import { BsSearch } from "react-icons/bs";
 import { BsCloudsFill } from "react-icons/bs";
 
 export default function Search(props) {
+  const [city, setcity] = useState(props.citydefault);
   const [weather, setWeather] = useState({ ready: false });
   function handleResponse(response) {
     setWeather({
@@ -19,22 +20,38 @@ export default function Search(props) {
       icon: <BsCloudsFill />,
     });
   }
+  function search() {
+    const apikey = `cdfcb64b7f4fb64ab376e215b5000fa5`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=imperial`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    setcity(event.target.value);
+  }
+
   if (weather.ready) {
     return (
       <div className="Weather">
         <div className="searchbar"></div>
         <div className="Search bar">
           {" "}
-          <form autoComplete="off">
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-10">
                 {" "}
                 <input
+                  autoComplete="off"
                   type="search"
                   placeholder="Type a city..."
                   className="form-control"
-                  autoComplete="off"
                   id="inputCity"
+                  onChange={handleCityChange}
                 />
               </div>
               <div className="col-2">
@@ -81,11 +98,7 @@ export default function Search(props) {
       </div>
     );
   } else {
-    const apikey = `cdfcb64b7f4fb64ab376e215b5000fa5`;
-
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.citydefault}&appid=${apikey}&units=imperial`;
-    axios.get(apiUrl).then(handleResponse);
-
+    search();
     return "Loading.....";
   }
 }
