@@ -9,7 +9,7 @@ export default function Weather() {
       <div className="container">
         <div className="weather-wrapper">
           <div className="weather-app">
-            <Search />
+            <Search citydefault="Chicago" />
           </div>
         </div>
       </div>

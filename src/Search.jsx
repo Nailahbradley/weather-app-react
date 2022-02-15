@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import CurrentDate from "./CurrentDate";
 import axios from "axios";
 import "./search.css";
 import { BsSearch } from "react-icons/bs";
 import { BsCloudsFill } from "react-icons/bs";
 
-export default function Search() {
+export default function Search(props) {
   const [weather, setWeather] = useState({ ready: false });
   function handleResponse(response) {
     setWeather({
       ready: true,
-      date: "Sunday, Feburary 9, 2022",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -67,19 +68,22 @@ export default function Search() {
         </div>
         <h2 className="text-capitalize"> {weather.description} </h2>
         <ul className="col-11">
-          <li>Wind: {Math.roundweather.wind} km/h </li>
+          <li>Wind: {Math.round(weather.wind)} km/h </li>
           <li>Humidity: {weather.humidity}%</li>
         </ul>
         <br />
         <div className="forecast">Week of forecast</div>
         <br />
-        <div className="Date"> {weather.date} </div>
+        <div className="Date">
+          {" "}
+          <CurrentDate date={weather.date} />{" "}
+        </div>
       </div>
     );
   } else {
     const apikey = `cdfcb64b7f4fb64ab376e215b5000fa5`;
-    let city = "Chicago";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=imperial`;
+
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.citydefault}&appid=${apikey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading.....";
