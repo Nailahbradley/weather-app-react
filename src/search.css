@@ -38,6 +38,7 @@ li {
 h2 {
   font-family: "Nunito", sans-serif;
   font-size: 35px;
+  line-height: 20px;
 }
 .search-icon {
   font-size: 24px;
@@ -47,18 +48,23 @@ h2 {
 
 .city {
   font-size: 70px;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 35px;
   font-family: "Nunito", sans-serif;
-  color: #4d4949;
-  box-shadow: rgba(124, 124, 124, 0.1) 0px 25px 20px -20px;
+  color: #575353;
 }
 .Date {
   font-size: "Nunito", sans-serif;
   font-size: 30px;
   color: grey;
 }
-.fahrenheit {
-  font-size: 25px;
+a {
+  font-size: 20px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.temp {
+  font-size: 20px;
   color: grey;
   position: relative;
   top: -92px;

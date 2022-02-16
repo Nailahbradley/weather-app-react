@@ -4,6 +4,7 @@ import axios from "axios";
 import "./search.css";
 import { BsSearch } from "react-icons/bs";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Search(props) {
   const [city, setcity] = useState(props.citydefault);
@@ -74,10 +75,7 @@ export default function Search(props) {
             <div className="circle">
               <div></div>
             </div>
-            <span className="temperature">
-              {Math.round(weather.temperature)}{" "}
-              <span className="fahrenheit">°F</span>
-            </span>
+            <WeatherTemperature fahrenheit={weather.temperature} />
           </div>
         </div>
         <div className="icon">
