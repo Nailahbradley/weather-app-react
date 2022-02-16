@@ -19,6 +19,7 @@ export default function Weather() {
           href="https://github.com/Nailahbradley/weather-app-react"
           target="_blank"
           rel="noreferrer"
+          className="github"
         >
           {" "}
           Open-sourced on GitHub{" "}
