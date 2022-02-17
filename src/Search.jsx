@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeatherForecast from "./WeatherForecast";
 import CurrentDate from "./CurrentDate";
 import axios from "axios";
 import "./search.css";
@@ -79,7 +80,7 @@ export default function Search(props) {
           </div>
         </div>
         <div className="icon">
-          <WeatherIcon code={weather.icon} />
+          <WeatherIcon code={weather.icon} color="#b99be6" size={80} />
         </div>
 
         <h2 className="text-capitalize"> {weather.description} </h2>
@@ -88,7 +89,7 @@ export default function Search(props) {
           <li>Humidity: {weather.humidity}%</li>
         </ul>
         <br />
-        <div className="forecast">Week of forecast</div>
+        <WeatherForecast />
         <br />
         <div className="Date">
           {" "}

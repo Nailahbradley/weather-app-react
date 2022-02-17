@@ -10,13 +10,10 @@ button {
 }
 button:hover {
   background-image: linear-gradient(
-    to right,
-    rgb(204, 156, 223) 0.3%,
-    rgb(155, 219, 245) 20.4%,
-    rgb(245, 183, 208) 40.2%,
-    rgb(250, 186, 98) 62.9%,
-    rgb(234, 238, 240) 81.9%,
-    rgb(250, 245, 171) 99.2%
+    68.4deg,
+    rgb(248, 182, 204) 0.5%,
+    rgb(192, 198, 230) 49%,
+    rgb(225, 246, 240) 99.8%
   );
   animation: slidebg 2s linear infinite;
 }
@@ -115,20 +112,17 @@ a {
 /*   Animation  */
 .circle {
   background-image: linear-gradient(
-    89.8deg,
-    rgb(204, 156, 223) 0.3%,
-    rgb(155, 219, 245) 20.4%,
-    rgb(245, 183, 208) 40.2%,
-    rgb(250, 186, 98) 62.9%,
-    rgb(234, 238, 240) 81.9%,
-    rgb(250, 245, 171) 99.2%
+    68.4deg,
+    rgb(248, 182, 204) 0.5%,
+    rgb(192, 198, 230) 49%,
+    rgb(225, 246, 240) 99.8%
   );
   width: 302px;
   height: 307px;
   border-style: solid;
   border-color: transparent;
   border-radius: 50%;
-  animation: rot 3s linear infinite;
+  animation: rot 2s linear infinite;
   padding: 1px;
 }
 .circle > div {
