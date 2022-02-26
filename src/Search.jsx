@@ -82,7 +82,7 @@ export default function Search(props) {
           </div>
         </div>
         <div className="icon">
-          <WeatherIcon code={weather.icon} color="#CCD7E8" size={80} />
+          <WeatherIcon code={weather.icon} color="#b99be6" size={90} />
         </div>
 
         <h2 className="text-capitalize"> {weather.description} </h2>
