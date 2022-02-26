@@ -45,10 +45,10 @@ h2 {
 
 .city {
   font-size: 70px;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 35px;
-  font-family: "Nunito", sans-serif;
-  color: #575353;
+  font-family: "Poppins", sans-serif;
+  color: #858585;
 }
 .Date {
   font-size: "Nunito", sans-serif;
@@ -85,14 +85,14 @@ a {
   color: #b99be6;
 }
 .temperature {
-  font-size: 120px;
+  font-size: 135px;
   font-weight: lighter;
   line-height: 1px;
   position: relative;
   top: -153px;
-  left: 25px;
-  font-family: "Poiret One", cursive;
-  color: rgb(85, 84, 84);
+  left: 31px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(102, 100, 100);
 }
 .row {
   --bs-gutter-x: 1.5rem;
@@ -117,8 +117,8 @@ a {
     rgb(192, 198, 230) 49%,
     rgb(225, 246, 240) 99.8%
   );
-  width: 302px;
-  height: 307px;
+  width: 301px;
+  height: 304px;
   border-style: solid;
   border-color: transparent;
   border-radius: 50%;

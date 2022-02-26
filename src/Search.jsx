@@ -13,6 +13,7 @@ export default function Search(props) {
   function handleResponse(response) {
     setWeather({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -26,6 +27,7 @@ export default function Search(props) {
     const apikey = `cdfcb64b7f4fb64ab376e215b5000fa5`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
+    console.log(apiUrl);
   }
 
   function handleSubmit(event) {
@@ -80,7 +82,7 @@ export default function Search(props) {
           </div>
         </div>
         <div className="icon">
-          <WeatherIcon code={weather.icon} color="#b99be6" size={80} />
+          <WeatherIcon code={weather.icon} color="#CCD7E8" size={80} />
         </div>
 
         <h2 className="text-capitalize"> {weather.description} </h2>
@@ -89,7 +91,7 @@ export default function Search(props) {
           <li>Humidity: {weather.humidity}%</li>
         </ul>
         <br />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weather.coordinates} />
         <br />
         <div className="Date">
           {" "}

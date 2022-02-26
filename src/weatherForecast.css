@@ -1,7 +1,8 @@
 .border {
-  max-width: 140px;
-  padding: 16px;
-  border-radius: 66px;
+  max-width: 152px;
+  padding-bottom: 33px;
+  padding-top: 26px;
+  border-radius: 48px;
   background: #b093dd;
   color: white;
   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
